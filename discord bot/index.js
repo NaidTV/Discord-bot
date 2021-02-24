@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 
-bot.login("ODA1MTY0NDY1OTA4ODc1MzA1.YBW51w.w7ZytyM2kkrSZYrZTblDh8gR1FU");
+bot.login(process.env.token);
 
 bot.on("ready", (message) => {
     var utente = bot.users.cache.get("672066155380211712");
